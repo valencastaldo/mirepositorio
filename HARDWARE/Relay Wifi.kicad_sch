@@ -3817,6 +3817,12 @@
 		(uuid "d9707070-8992-4704-a492-2ac7baf0319f")
 	)
 	(junction
+		(at 99.06 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9702cec-3da5-415e-8b45-75bbc6a3b64b")
+	)
+	(junction
 		(at 76.2 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4028,6 +4034,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 43.18) (xy 107.95 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1116db4d-9dd1-4d0f-be0c-273463066c75")
+	)
+	(wire
+		(pts
 			(xy 231.14 181.61) (xy 231.14 189.23)
 		)
 		(stroke
@@ -4055,6 +4071,16 @@
 			(type default)
 		)
 		(uuid "153db53b-309f-49f4-bb1d-7f2d0a11319d")
+	)
+	(wire
+		(pts
+			(xy 107.95 53.34) (xy 99.06 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16e2d908-1edd-461f-897e-24d9a23115d7")
 	)
 	(wire
 		(pts
@@ -5028,6 +5054,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 40.64) (xy 99.06 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b35a58a0-3165-4007-9c23-0d4ef82e7191")
+	)
+	(wire
+		(pts
 			(xy 206.375 219.075) (xy 215.265 219.075)
 		)
 		(stroke
@@ -5165,6 +5201,16 @@
 			(type default)
 		)
 		(uuid "e0f5b497-225b-4b05-a841-d494f5ffe63c")
+	)
+	(wire
+		(pts
+			(xy 107.95 50.8) (xy 107.95 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3347802-3fd1-42b5-a055-c68737dc1cd8")
 	)
 	(wire
 		(pts
@@ -6257,7 +6303,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 109.22 250.19 0)
 			(effects
 				(font
@@ -7835,7 +7881,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 223.52 250.19 0)
 			(effects
 				(font
@@ -8055,7 +8101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "EESTN5:Pin_Header_3"
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-3_P5.08mm"
 			(at 47.625 60.325 0)
 			(effects
 				(font
@@ -8409,6 +8455,76 @@
 			(project "Relay Wifi"
 				(path "/162603eb-7778-4005-b9b4-324e6481b3d0"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 107.95 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "927d2bae-4457-4a8d-ae75-e8fc4234b52b")
+		(property "Reference" "C3"
+			(at 111.76 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 111.76 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
+			(at 108.9152 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 107.95 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93b95ccd-f22c-4e55-9b41-d61f239bfc76")
+		)
+		(pin "2"
+			(uuid "fb62c980-46d5-4656-92bb-51cde892d6eb")
+		)
+		(instances
+			(project ""
+				(path "/162603eb-7778-4005-b9b4-324e6481b3d0"
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -10107,7 +10223,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 223.52 193.675 0)
 			(effects
 				(font
@@ -10543,7 +10659,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 109.22 193.675 0)
 			(effects
 				(font
